@@ -23,7 +23,7 @@
         <link rel="icon" sizes="any" mask href="pinned.svg" /> <!-- 1:1, transparent background, solid foreground color -->
         <meta name="theme-color" content="#000" /> <!-- foreground color for pinned.svg -->
         <link rel="icon" sizes="196×196" href="favicon-196x196.png" />
-
+        <!-- apple-touch-icon-precomposed.png, 180x180 -->
         <style>
             <?php include('styles/css/base.css'); ?>
         </style>
