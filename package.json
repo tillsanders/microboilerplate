@@ -1,0 +1,10 @@
+{
+  "name": "microboilerplate-builder",
+  "description": "Builds Microboilerplates front end using Gulp.",
+  "dependencies": {
+    "gulp": "3.9.*",
+    "gulp-ruby-sass": "2.0.*",
+    "gulp-notify": "2.2.*",
+    "gulp-livereload": "3.8.*"
+  }
+}
