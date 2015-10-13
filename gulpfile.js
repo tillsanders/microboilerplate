@@ -5,12 +5,15 @@ var gulp = require('gulp'),
 	notify = require('gulp-notify'),
 	livereload = require('gulp-livereload');
 
+// Set directories
+var styles = 'styles/scss/**/*.scss';
+
 // Task: Compile sass to css
 gulp.task('styles', function() {
-	return sass('styles/scss/*.scss', { style: 'expanded' })
+	return sass(styles, { style: 'expanded' })
 		.pipe(gulp.dest('styles/css'))
 		.pipe(notify({
-			title: 'Styles aktualisiert',
+			title: 'Styles updated!',
 			message: function(file) {
 				return file.relative;
 			},
@@ -22,5 +25,5 @@ gulp.task('styles', function() {
 // Task: Watch for changes
 gulp.task('watch', function() {
 	livereload.listen();
-	gulp.watch('styles/scss/*/**.scss', ['styles']);
+	gulp.watch(styles, ['styles']);
 });
