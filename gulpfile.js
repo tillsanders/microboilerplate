@@ -9,8 +9,8 @@ var gulp = require('gulp'),
     argv = require('yargs').argv; // Adds support for cli flags
 
 // Set directories
-var styles = 'styles/scss/**/*.scss'; // contains all scss stylesheets
-var scripts = 'scripts/*.js'; // contains all scripts, excluding vendor/
+var styles = 'styles/scss/**/**.scss'; // contains all scss stylesheets
+var scripts = 'scripts/src/*.js'; // contains all scripts, excluding vendor/
 var layouts = ['./**/*.php', './**/*.html']; // all php and html files
 
 // Profiles
